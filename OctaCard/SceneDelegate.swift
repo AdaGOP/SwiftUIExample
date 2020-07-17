@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
-        let contentView = DemoDay3UserInput()
+        let contentView = StopWatchDemo()
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
@@ -27,11 +27,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
     }
     
-    func loadStoryboard(named: String) -> UIViewController{
-        let sb = UIStoryboard(name: "BasicTableView", bundle: nil)
-        let vc = sb.instantiateInitialViewController() as! BasicTableView
-        return vc
-    }
+ 
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

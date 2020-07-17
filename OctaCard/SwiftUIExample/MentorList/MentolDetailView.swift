@@ -31,3 +31,12 @@ struct MentolDetailView_Previews: PreviewProvider {
         MentolDetailView(mentor: GOPMentor(id: 1, name: "octa", role: "Tech Mentor", imageName: "octa"))
     }
 }
+
+
+struct GOPMentor: Identifiable{
+    var id: Int
+    var name: String
+    var role: String
+    var imageName:String
+    
+}
